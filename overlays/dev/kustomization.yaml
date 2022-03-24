@@ -3,17 +3,6 @@ kind: Kustomization
 bases:
   - ../../base/
 resources:
-  - prometheus-ingress.yaml
+  - prometheus/prometheus-ingress.yaml
 patchesStrategicMerge:
-  - prometheus.yaml
-configMapGenerator:
-  # description: application alerts handled by thanos-rule
-  # used-by: Thanos Rule
-  - name: alerts
-    files:
-      - prometheus-alerts.yaml=resources/prometheus-alerts.yaml
-  # description: Prometheus configuration
-  # used-by: Prometheus
-  - name: prometheus
-    files:
-      - prometheus.yaml.tmpl=resources/prometheus.yaml.tmpl
+  - prometheus/prometheus.yaml
