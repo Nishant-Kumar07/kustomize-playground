@@ -21,4 +21,4 @@ spec:
         - name: prometheus-server
           env:
             - name: PROMETHEUS_URL
-              value: "https://prometheus.overlay.aws.example.com"
+              value: "https://prometheus.overlay.dev.example.com"
