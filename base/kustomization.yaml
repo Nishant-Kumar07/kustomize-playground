@@ -2,5 +2,10 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ./prometheus
+
+images:
+- name: quay.io/prometheus/prometheus
+  newTag: v2.31.0
+
 commonLabels:
   service: monitoring

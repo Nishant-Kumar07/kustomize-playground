@@ -1199,6 +1199,8 @@ spec:
       app: prometheus
       release: testing
   replicas: 1
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
