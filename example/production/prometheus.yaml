@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: prometheus
+spec:
+  template:
+    spec:
+      containers:
+      - name: prometheus
+        env:
+        - name: PROMETHEUS_URL
+          value: "https://prometheus.overlay.gcp.example.com"
