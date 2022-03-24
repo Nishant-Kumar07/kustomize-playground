@@ -4,5 +4,10 @@ commonLabels:
   service: monitoring
 
 namespace: monitoring
+
+replicas:
+- name: testing-grafana
+  count: 1
+
 resources:
   - grafana.yaml

@@ -4,13 +4,13 @@ resources:
   - ./prometheus
   - ./grafana
 
-images:
-- name: quay.io/prometheus/prometheus
-  newTag: v2.31.0
+#images:
+#- name: quay.io/prometheus/prometheus
+#  newTag: v2.31.0
 
-replicas:
-- name: testing-grafana
-  count: 3
+#replicas:
+#- name: testing-grafana
+#  count: 3
 
 commonLabels:
   service: monitoring

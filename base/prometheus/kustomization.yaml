@@ -4,7 +4,7 @@ commonLabels:
   service: monitoring
 resources:
   - prometheus.yaml
-#images:
-#  - name: prometheus
-#    newName: prom/prometheus
-#    newTag: v2.33.4
+
+images:
+- name: quay.io/prometheus/prometheus
+  newTag: v2.31.1
