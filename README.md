@@ -1,7 +1,7 @@
 # kustomize-playground
 
 # Command to view the rendered yaml/dry run
-# Note: Need to provide path to directory which contains kustomization.yaml 
+### Note: Need to provide path to directory which contains kustomization.yaml 
 
 $ kustomize build base 
 or
